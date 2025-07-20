@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple SRS</title>
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 10px; }
+    #reviewMode { display: none; }
+    #answer { display: none; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div id="addMode">
+    <h3>Add Flashcard</h3>
+    <div>
+      <label>Question<br><textarea id="question" rows="3"></textarea></label>
+    </div>
+    <div>
+      <label>Answer<br><textarea id="answerInput" rows="3"></textarea></label>
+    </div>
+    <button id="saveCard">Save</button>
+  </div>
+  <div id="reviewMode">
+    <h3>Review</h3>
+    <div id="reviewQuestion"></div>
+    <button id="showAnswer">Show Answer</button>
+    <div id="answer"></div>
+    <div style="margin-top:10px;">
+      <button id="good">Good</button>
+      <button id="again">Again</button>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
