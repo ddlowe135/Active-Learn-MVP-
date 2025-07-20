@@ -1,23 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Active Learn (MVP)",
-  "description": "One-card SRS reviews for ADHD-friendly learning",
+  "name": "Simple SRS",
+  "description": "Build and review flashcards right in Chrome",
   "version": "0.1",
   "permissions": [
+    "storage",
     "alarms",
     "notifications",
-    "storage",
     "contextMenus",
     "scripting"
-  ],
-  "host_permissions": [
-    "https://api.openai.com/*"
   ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
-  "options_page": "options.html",
+  "options_page": "settings.html",
   "icons": {"128": "icon.png"},
-  "action": {}
+  "action": {"default_popup": "popup.html"}
 }
