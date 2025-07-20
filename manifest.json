@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Active Learn (MVP)",
+  "description": "One-card SRS reviews for ADHD-friendly learning",
+  "version": "0.1",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage",
+    "contextMenus",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {}
+}
